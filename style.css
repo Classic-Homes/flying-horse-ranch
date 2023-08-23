@@ -1,0 +1,13 @@
+/*
+Theme Name:     Athabasca Fishing Lodge Divi Child
+Description:    
+Author:         Chris Loidolt
+Template:       Divi
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+/*Photo Gallery pages */
+.photo_gallery-template-default #main-content {
+    background-color: #F1F1E6;
+}
