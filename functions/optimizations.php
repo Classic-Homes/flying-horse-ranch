@@ -73,19 +73,6 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 
 
 /**
- * De-register Heartbeat
- */
-add_action('init', 'my_deregister_heartbeat', 1);
-function my_deregister_heartbeat()
-{
-    global $pagenow;
-
-    if ('post.php' != $pagenow && 'post-new.php' != $pagenow)
-        wp_deregister_script('heartbeat');
-}
-
-
-/**
  * Disable Attachment Pages
  */
 add_action('template_redirect', 'test_attachment_redirect', 10);
