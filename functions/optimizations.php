@@ -73,19 +73,6 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 
 
 /**
- * Disable Attachment Pages
- */
-add_action('template_redirect', 'test_attachment_redirect', 10);
-function test_attachment_redirect()
-{
-    if (is_attachment()) {
-        $url = wp_get_attachment_url(get_queried_object_id());
-        wp_redirect($url, 301);
-    }
-    return;
-}
-
-/**
  * Comment Changes
  */
 // Remove Website Field from Comments
