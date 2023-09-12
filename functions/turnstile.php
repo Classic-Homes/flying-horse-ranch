@@ -37,7 +37,7 @@ $postdata =$_POST['cf-turnstile-response'];
     if(empty($postdata)){ 
         wp_die(__("<b>ERROR: </b><b>Please click the challenge checkbox.</b><p><a href='javascript:history.back()'>« Back</a></p>")); 
     } elseif(!$results['success']){ 
-        wp_die(__("<b>Sorry, spam detected!</b>")); 
+        wp_die(__("<b>Sorry, spam detected!</b><br /><br />Please try again.<p><a href='javascript:history.back()'>« Back</a></p>"));
     } else {
         return $user;
     }   
